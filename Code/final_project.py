@@ -15,9 +15,9 @@ def myCommandCallback(cmd):
         print(type(cmd.data))
         i=cmd.data['command']
         if i=='motoron':
-                print("light is on")
-        elif i=='lightoff':
-                print("light is off")
+                print("Motor is on")
+        elif i=='motoroff':
+                print("Motor is off")
 
 try:
         deviceOptions = {"org": organization, "type": deviceType, "id": deviceId, "auth-method": authMethod, "auth-token": authToken}
